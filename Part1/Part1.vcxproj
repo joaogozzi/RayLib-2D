@@ -25,6 +25,7 @@
     <ClCompile Include="MemoryGame.cpp" />
     <ClCompile Include="MemoryTile.cpp" />
     <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="SnakeGame.cpp" />
     <ClCompile Include="Structure.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -35,6 +36,7 @@
     <ClInclude Include="MemoryTileStatus.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="ParticlesSystem.h" />
+    <ClInclude Include="SnakeGame.h" />
     <ClInclude Include="Structure.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
