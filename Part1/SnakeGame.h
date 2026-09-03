@@ -38,7 +38,9 @@ public:
 		Vector2 position;
 		Vector2 size = Vector2{ TILE_SIZE, TILE_SIZE };
 		Color color;
+		// Extra
 		bool isActive = true;
+		//
 
 		void Draw()
 		{
@@ -64,16 +66,20 @@ public:
 
 	std::vector<Piece> player;
 	Piece fruit;
+	// Extra
 	Piece powerUp;
+	//
 	Vector2 speed = Vector2{ TILE_SIZE, 0 };
-	bool isInvencible = false;
 
 	int currentFrame = 0;
+
+	// Extra
+	bool isInvencible = false;
 	int powerUpFrame = 0;
 	int invencibleFrame = 0;
 
 	int invencibleSize = 0;
-
+	//
 	bool gameOver = false;
 
 	void Main();

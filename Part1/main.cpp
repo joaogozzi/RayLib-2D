@@ -5,6 +5,7 @@
 #include "Game2048.h"
 #include "MemoryGame.h"
 #include "SnakeGame.h"
+#include "AI.h"
 #include <string>
 #include <random>
 #include <vector>
@@ -676,7 +677,7 @@ void LoadImgFunc()
 
 int main()
 {
-	SnakeGame game;
+	AI game;
 	game.Main();
 
 	return 0;

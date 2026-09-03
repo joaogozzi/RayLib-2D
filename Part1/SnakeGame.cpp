@@ -3,11 +3,6 @@
 #include <iostream>
 
 /*
-	A fruit should not spawn over the player
-	The tail should not loop over itself -> If it does, GameOver
-	Some fruits shoud have powerups
-		We should have timed powerup fruits
-
 	Optional -> Game Pause (Press P)
 	Optional -> Tail Count (Print tail num on each Tail)
 	Optional -> Barriers
@@ -69,7 +64,8 @@ void SnakeGame::Start()
 
 	fruit.color = DARKPURPLE;
 	fruit.RandomLoc(borderGap);
-
+	
+	// Extra
 	powerUp.color = ORANGE;
 }
 
@@ -99,7 +95,7 @@ void SnakeGame::Update()
 			}
 		}
 	}
-
+	// Extra
 	if (player[0].position == powerUp.position)
 	{
 		powerUpFrame = 0;
@@ -114,7 +110,8 @@ void SnakeGame::Update()
 		isInvencible = true;
 		invencibleFrame = 0;
 	}
-
+	//
+	// Extra
 	if (isInvencible)
 	{
 		invencibleFrame++;
@@ -133,7 +130,8 @@ void SnakeGame::Update()
 			invencibleFrame = 0;
 		}
 	}
-
+	//
+	// Extra
 	if (powerUpFrame % 300 == 0)
 	{
 		if (!powerUp.isActive)
@@ -146,7 +144,7 @@ void SnakeGame::Update()
 			powerUp.isActive = false;
 		}
 	}
-
+	//
 	if (player.size() > 1)
 	{
 		for (int i = 1; i < player.size(); i++)
@@ -159,8 +157,9 @@ void SnakeGame::Update()
 	}
 
 	currentFrame++;
+	// Extra
 	powerUpFrame++;
-
+	//
 	if (!gameOver)
 		gameOver = player[0].Bumped(min, max);
 
@@ -171,9 +170,10 @@ void SnakeGame::Update()
 
 		fruit.Draw();
 
+		// Extra
 		if (powerUp.isActive)
 			powerUp.Draw();
-
+		//
 		for (Line l : grid)
 			l.Draw();
 	}

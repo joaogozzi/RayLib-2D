@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AI.cpp" />
     <ClCompile Include="FlappyBird.cpp" />
     <ClCompile Include="Game2048.cpp" />
     <ClCompile Include="main.cpp" />
@@ -29,11 +30,13 @@
     <ClCompile Include="Structure.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AI.h" />
     <ClInclude Include="FlappyBird.h" />
     <ClInclude Include="Game2048.h" />
     <ClInclude Include="MemoryGame.h" />
     <ClInclude Include="MemoryTile.h" />
     <ClInclude Include="MemoryTileStatus.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="ParticlesSystem.h" />
     <ClInclude Include="SnakeGame.h" />
