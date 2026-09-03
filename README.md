@@ -119,25 +119,6 @@ Official Raylib resources:
 
 ---
 
-## 📈 Future Improvements
-
-As the project evolves, I plan to experiment with more advanced 2D game programming concepts, including:
-
-* [ ] Sprite animation
-* [ ] 2D camera systems
-* [ ] Advanced collision detection
-* [ ] Particle systems
-* [ ] Enemy AI
-* [ ] Pathfinding
-* [ ] Procedural generation
-* [ ] Physics systems
-* [ ] UI systems
-* [ ] Audio systems
-* [ ] Game states
-* [ ] More complete 2D games
-
----
-
 ## 👨‍💻 Author
 
 **João Gozzi**
